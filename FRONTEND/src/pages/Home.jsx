@@ -1,5 +1,11 @@
+import GrowingParent from "../components/GrowingElement/GrowingParent"
+
 export default function Home() {
     return (
-        <div>Welcome home</div>
+
+        <div>
+            <div>Welcome home</div>
+            <GrowingParent></GrowingParent>
+        </div>
     )
 }
