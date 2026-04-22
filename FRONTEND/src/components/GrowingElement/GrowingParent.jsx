@@ -17,10 +17,11 @@ function getdateSecond(num) {
     return (num * 1000)
 }
 
-let targetdate1 = new Date("2026-04-22T16:52:00");
-targetdate1 = new Date(targetdate1.setMinutes(targetdate1.getMinutes() + 1));
-let targetdate2 = new Date(targetdate1);
-targetdate2 = new Date(targetdate2.setMinutes(targetdate2.getMinutes() + 1));
+let now = new Date(Date.now());
+
+let targetdate1 = new Date(now.getTime() + getdateMinute(1));
+//targetdate1 = new Date(targetdate1.setMinutes(targetdate1.getMinutes() + 1));
+let targetdate2 = new Date(now.getTime() + getdateMinute(2));
 
 let default_age = null;
 if (Date.now() > targetdate1) {
@@ -33,7 +34,7 @@ if (default_age == null) {
     default_age = 0;
 }
 
-console.log(1, targetdate1, 2, targetdate2);
+console.log("now", now, 1, targetdate1, 2, targetdate2);
 
 export default function GrowingParent() {
 
@@ -41,14 +42,8 @@ export default function GrowingParent() {
     const [energy, setEnergy] = useState(0);
     const [growthtimer, setGrowthtimer] = useState(growthtime);
 
-    function gettimeleft() {
-        let usedate;
-        if (age == 0) {
-            usedate = targetdate1;
-        }
-        if (age == 1) {
-            usedate = targetdate2;
-        }
+    function gettimeleft(usedate) {
+
         if (age == maxage) {
             return { h: 0, m: 0, s: 0 };
         }
@@ -61,9 +56,29 @@ export default function GrowingParent() {
         return { h, m, s };
     }
 
-    const [timeleft, setTimeleft] = useState(gettimeleft());
+    const [phase1, setPhase1] = useState(targetdate1);
+    const [phase2, setPhase2] = useState(targetdate2);
+    const [timeleft, setTimeleft] = useState(gettimeleft(targetdate1));
 
-    let growth_mult = Math.floor(growthtimer * (1 - (energy / 10)));
+    function applyEnergyMult() {
+        let mult = 0 + (energy / 100);
+        if (mult >= 0.5) {
+            mult = 0.5;
+        }
+
+        let phase1_time = targetdate1.getTime();
+        let timediff1 = phase1_time - now.getTime();
+        let age1bonus = phase1_time - (timediff1 * mult);
+
+        let phase2_time = targetdate2.getTime();
+        let timediff2 = phase2_time - now.getTime();
+        let age2bonus = phase2_time - (timediff2 * mult);
+        console.log(timediff1, timediff2)
+        setPhase1(new Date(age1bonus))
+        setPhase2(new Date(age2bonus))
+    }
+
+    //let growth_mult = Math.floor(growthtimer * (1 - (energy / 10)));
 
     console.log(timeleft);
 
@@ -83,7 +98,13 @@ export default function GrowingParent() {
             const t = setInterval(() => {
 
                 //setGrowthtimer(growth_mult - 1);
-                setTimeleft(gettimeleft());
+                if (age == 0) {
+                    setTimeleft(gettimeleft(phase1));
+                }
+                if (age == 1) {
+                    setTimeleft(gettimeleft(phase2));
+                }
+
                 //console.log(growthtimer)
 
             }, 1000);
@@ -98,13 +119,18 @@ export default function GrowingParent() {
                 setAge(age + 1);
                 if (age < maxage - 1) {
                     //setGrowthtimer(growthtime);
-                    setTimeleft(gettimeleft());
+                    setTimeleft(gettimeleft(phase2));
                 }
 
             }
         }
 
     }, [timeleft])
+
+    useEffect(() => {
+        console.log("phase1:", phase1);
+        console.log("phase2:", phase2);
+    }, [phase1, phase2])
 
     function getDragon() {
 
@@ -122,6 +148,7 @@ export default function GrowingParent() {
 
     function increaseEnergy(en) {
         setEnergy(en);
+        applyEnergyMult();
     }
 
     function decreaseTimer() {

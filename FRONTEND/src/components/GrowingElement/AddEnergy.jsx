@@ -13,7 +13,7 @@ export default function AddEnergy({ currentenergy, getfunc }) {
 
     return (
         <div>
-            <div>{currentenergy}</div>
+            <div>Energy: {currentenergy}</div>
             <button onClick={increaseEnergy}>Give energy</button>
         </div>
     )
