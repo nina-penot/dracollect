@@ -1,4 +1,5 @@
-import GrowingParent from "../components/GrowingElement/GrowingParent"
+import GrowingParent from "../components/GrowingElement/GrowingParent";
+import { default as test } from "../assets/images/newtest.svg";
 
 export default function Home() {
     return (
@@ -6,6 +7,7 @@ export default function Home() {
         <div>
             <div>Welcome home</div>
             <GrowingParent></GrowingParent>
+            <img src={test}></img>
         </div>
     )
 }

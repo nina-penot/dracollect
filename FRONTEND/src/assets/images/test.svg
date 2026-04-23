@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="47.389767mm"
+   height="95.265312mm"
+   viewBox="0 0 47.389767 95.265312"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="test.svg"
+   inkscape:export-filename="test3.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.73139029"
+     inkscape:cx="-174.32553"
+     inkscape:cy="138.77679"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4"
+         id="use5" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-71.627282,-75.844306)">
+    <g
+       id="g5"
+       clip-path="url(#clipPath5)">
+      <g
+         inkscape:label="Clip"
+         id="g4">
+        <g
+           id="g3">
+          <path
+             style="fill:#000000;stroke-width:0.264583;paint-order:stroke fill markers"
+             d="m 100.20585,100.5676 -20.258227,7.95859 -8.320341,30.74908 6.149819,31.83435 39.431179,-22.7905 1.80877,-26.40804 z"
+             id="path1" />
+          <path
+             style="fill:#000000;stroke-width:0.264583;paint-order:stroke fill markers"
+             d="m 84.285663,112.03982 -8.697156,-7.03446 12.406236,-28.00996 1.790591,31.07954 z"
+             id="path2" />
+          <path
+             style="fill:#000000;stroke-width:0.264583;paint-order:stroke fill markers"
+             d="m 108.07494,113.95831 -2.81379,-13.68523 13.68523,-24.428774 -2.55798,34.021224 -7.80186,4.34858 z"
+             id="path3" />
+        </g>
+      </g>
+      <g
+         id="g1">
+        <path
+           style="fill:#808080;stroke-width:0.264583;paint-order:stroke fill markers"
+           d="m 91.575926,66.763455 c 0,0 -9.208754,-33.253828 -23.277679,14.068927 -14.068928,47.322748 -17.138512,66.507658 -17.138512,66.507658 0,0 19.440699,51.15973 25.324069,49.62494 5.883368,-1.53479 62.926476,-51.15973 62.926476,-53.97352 0,-2.81379 -10.74355,-71.367832 -10.74355,-71.367832 z"
+           id="path4" />
+        <path
+           style="fill:#000000;stroke-width:0.264583;paint-order:stroke fill markers"
+           d="m 92.428136,153.92631 15.736294,-5.96894 -0.72351,-13.92753 z"
+           id="path6" />
+        <path
+           style="fill:#ffff00;stroke-width:0.264583;paint-order:stroke fill markers"
+           d="m 98.984927,147.95736 5.561973,-0.76872 -1.26614,-7.37074 -7.144647,3.07491 z"
+           id="path7" />
+        <rect
+           style="fill:#000000;stroke-width:0.264583;paint-order:stroke fill markers"
+           id="rect7"
+           width="2.7131548"
+           height="2.6679354"
+           x="99.663216"
+           y="143.61632" />
+        <path
+           style="fill:#ffffff;stroke-width:0.264583;paint-order:stroke fill markers"
+           d="m 76.149207,172.19488 29.663823,-32.37698 13.02314,-19.35383 -3.43666,-6.51158 5.42631,0.72351 1.44702,-46.666257 -51.007312,0.904385 -15.917172,54.443972 5.064554,42.50609 z"
+           id="path5" />
+        <path
+           style="fill:#cccccc;stroke-width:0.264583;paint-order:stroke fill markers"
+           d="m 111.19412,112.82201 -3.39144,1.71834 6.64723,-0.63307 z"
+           id="path8" />
+        <path
+           style="fill:#cccccc;stroke-width:0.264583;paint-order:stroke fill markers"
+           d="m 89.577499,104.71758 -9.912199,3.90093 -1.790592,-0.47962 -0.255799,-0.84733 14.596512,-5.64356 z"
+           id="path9" />
+      </g>
+    </g>
+  </g>
+</svg>
