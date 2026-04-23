@@ -1,0 +1,18 @@
+[
+    {
+        "id": 0,
+        "name": "zoneexample",
+        "eggs": [
+            {
+                "dragonid": 1,
+                "chance": 9
+            },
+            {
+                "dragonid": 2,
+                "chance": 2
+            }
+        ],
+        "eggmin": 1,
+        "eggmax": 4
+    }
+]

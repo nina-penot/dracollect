@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "name": "true dragon",
+        "canbreedwith": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    },
+    {
+        "id": 2,
+        "name": "wyvern",
+        "canbreedwith": [
+            4,
+            6,
+            1
+        ]
+    },
+    {
+        "id": 3,
+        "name": "drake",
+        "canbreedwith": [
+            5,
+            6,
+            1
+        ]
+    },
+    {
+        "id": 4,
+        "name": "serpentine",
+        "canbreedwith": [
+            5,
+            2,
+            1
+        ]
+    },
+    {
+        "id": 5,
+        "name": "piscine",
+        "canbreedwith": [
+            3,
+            4,
+            1
+        ]
+    },
+    {
+        "id": 6,
+        "name": "raptor",
+        "canbreedwith": [
+            1,
+            2,
+            3
+        ]
+    }
+]

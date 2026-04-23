@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "specie": "dragonexample",
+        "type_id": 1,
+        "variants": [
+            {
+                "id": 1,
+                "name": "regular",
+                "eggimg": "path_to_egg_image",
+                "babyimg": "path_to_baby_image",
+                "adultimg": "path_to_adult_image",
+                "chance": 8
+            },
+            {
+                "id": 2,
+                "name": "rarevariant",
+                "eggimg": "...",
+                "babyimg": "...",
+                "adultimg": "...",
+                "chance": 2
+            }
+        ],
+        "canbreed": true,
+        "defaultbaby": {
+            "baby_id": 0,
+            "variant": 1
+        },
+        "breeding": [
+            {
+                "parent_id": 1,
+                "baby_id": 3
+            },
+            {
+                "parent_id": 2,
+                "baby_id": 9
+            }
+        ],
+        "hatchtime": 86400,
+        "growthtime": 172800
+    }
+]
