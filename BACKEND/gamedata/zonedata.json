@@ -9,7 +9,11 @@
             },
             {
                 "dragonid": 2,
-                "chance": 2
+                "chance": 9
+            },
+            {
+                "dragonid": 3,
+                "chance": 9
             }
         ],
         "eggmin": 1,

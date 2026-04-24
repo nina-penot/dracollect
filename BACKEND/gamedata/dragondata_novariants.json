@@ -1,0 +1,29 @@
+[
+    {
+        "id": 0,
+        "specie": "dragonexample",
+        "type_id": 1,
+        "canbreed": true,
+        "breeding": [
+            {
+                "parent_id": 1,
+                "baby_id": 3
+            },
+            {
+                "parent_id": 2,
+                "baby_id": 9
+            }
+        ],
+        "hatchtime": 86400,
+        "growthtime": 172800
+    },
+    {
+        "id": 1,
+        "specie": "Coureur des Bois",
+        "type_id": 6,
+        "canbreed": true,
+        "breeding": [],
+        "hatchtime": 86400,
+        "growthtime": 172800
+    }
+]
