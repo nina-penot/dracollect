@@ -2,6 +2,7 @@
     {
         "id": 0,
         "name": "zoneexample",
+        "img": "/assets/images/zones/zonetest.png",
         "eggs": [
             {
                 "dragonid": 1,

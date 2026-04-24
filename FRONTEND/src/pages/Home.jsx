@@ -1,4 +1,5 @@
 import GrowingParent from "../components/GrowingElement/GrowingParent";
+import ZoneTest from "../components/ZoneTest/ZoneTest";
 import { default as test } from "../assets/images/newtest.svg";
 
 export default function Home() {
@@ -6,7 +7,8 @@ export default function Home() {
 
         <div>
             <div>Welcome home</div>
-            <GrowingParent></GrowingParent>
+            {/* <GrowingParent></GrowingParent> */}
+            <ZoneTest></ZoneTest>
             <img src={test}></img>
         </div>
     )

@@ -39,3 +39,9 @@ export const authService = {
     }),
     getProfile: () => fetchAPI('/auth/me')
 };
+
+export const gameService = {
+    getZoneAll: () => fetchAPI('/gamedata/zones', {
+        method: "GET"
+    })
+}
