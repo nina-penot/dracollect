@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { gameService } from "../services/api";
 
 export default function useGameData() {
