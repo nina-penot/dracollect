@@ -4,11 +4,18 @@ import { gameService } from "../services/api";
 export default function useGameData() {
 
     const [zonedata, setZonedata] = useState({});
+    const [error, setError] = useState("");
 
     async function getzones() {
-        const data = await gameService.getZoneAll();
-        setZonedata(data);
-        return data;
+        try {
+            const data = await gameService.getZoneAll();
+            setZonedata(data);
+            return data;
+        } catch (err) {
+            console.log(err);
+            setError(err);
+        }
+
     }
 
     let dataget = false;
@@ -19,5 +26,5 @@ export default function useGameData() {
         }
     }, [])
 
-    return { zonedata, getzones }
+    return { zonedata, error, getzones }
 }
