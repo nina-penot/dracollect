@@ -11,5 +11,13 @@ export default function useGameData() {
         return data;
     }
 
+    let dataget = false;
+    useEffect(() => {
+        if (!dataget) {
+            setZonedata(getzones());
+            dataget = true;
+        }
+    }, [])
+
     return { zonedata, getzones }
 }
