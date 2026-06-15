@@ -18,7 +18,7 @@ export default function ZoneCanvaTest() {
         save = false;
     }, [])
 
-    function saveinState() {
+    async function saveinState() {
         getzones();
     }
 
